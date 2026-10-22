@@ -1,0 +1,7 @@
+# ByOp by CamiKiss - Lista de nicks autorizados
+# Edita este archivo manualmente. Escribe UN nick por linea, sin espacios.
+# Las lineas que empiezan con # son comentarios.
+# Despues de editar, ejecuta /byop reload o reinicia el servidor.
+#
+# Ejemplo (quita el # para activarlo):
+# Notch

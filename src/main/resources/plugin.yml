@@ -1,0 +1,15 @@
+name: ByOp
+main: com.byop.ByOpPlugin
+version: 1.2.0
+api-version: 1.13
+author: CamiKiss
+description: By CamiKiss - Bloquea /op (jugadores, consola y RCON) salvo para los nicks autorizados en allowed.txt
+commands:
+  byop:
+    description: Recarga o muestra la lista de nicks autorizados
+    usage: /byop reload | list
+    permission: byop.admin
+permissions:
+  byop.admin:
+    description: Permite usar /byop
+    default: op

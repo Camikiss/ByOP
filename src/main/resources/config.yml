@@ -1,0 +1,29 @@
+# ByOp - by CamiKiss
+# La lista de nicks autorizados se edita MANUALMENTE en allowed.txt
+# (plugins/ByOp/allowed.txt), un nick por linea. No hay comandos para agregar.
+# Despues de editar allowed.txt ejecuta /byop reload.
+#
+# Si esta en true, se quita el OP a cualquier jugador que no este en la lista
+# (se revisa al entrar y cada check-interval-ticks).
+deop-unauthorized: true
+
+# Cada cuantos ticks se revisa quien tiene OP sin estar autorizado (20 ticks = 1 segundo).
+check-interval-ticks: 40
+
+# Mensajes editables.
+# Colores: usa & y el codigo (ej: &c rojo, &a verde, &e amarillo, &l negrita).
+# Placeholders disponibles:
+#   %target% -> nick al que se intenta dar OP / nick afectado
+#   %player% -> jugador que ejecuta o recibe la accion
+#   %count%  -> cantidad de nicks
+#   %names%  -> lista de nicks permitidos
+messages:
+  prefix: "&4[ByOp] &c"
+  no-permission: "&cNo tienes permiso para usar este comando."
+  usage: "&cUso: /byop reload | list"
+  op-blocked-player: "&cNo puedes dar OP a &f%target%&c. Ese nick no esta autorizado."
+  op-blocked-console: "&cComando /op bloqueado: &f%target%&c no esta autorizado."
+  op-removed: "&cTu OP fue retirado: no estas autorizado."
+  reloaded: "&aLista recargada. Nicks permitidos: &f%count%"
+  list: "&eNicks permitidos (&f%count%&e): &f%names%"
+  empty-names: "&7ninguno"
