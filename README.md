@@ -10,8 +10,8 @@ La lista de autorizados se edita **manualmente** en `plugins/ByOp/allowed.txt`. 
 | Versión | 1.2.0 |
 | Autor | **CamiKiss** |
 | Plataforma | Bukkit, Spigot, Paper |
-| Versiones de Minecraft | 1.7 – 1.21 |
-| Java | 8 o superior |
+| Versiones de Minecraft | 1.7 – 26.3 (última versión) |
+| Java | 8 o superior (Paper 26.1+ requiere Java 25) |
 | Dependencias | Ninguna |
 
 ---
@@ -51,10 +51,9 @@ La lista de autorizados se edita **manualmente** en `plugins/ByOp/allowed.txt`. 
 
 ## Requisitos y compatibilidad
 
-- Servidor **Bukkit, Spigot o Paper** de Minecraft **1.7 a 1.21**.
-- **Java 8 o superior** (el servidor moderno ya requiere una versión más nueva de Java).
-- El plugin está compilado con bytecode de **Java 8**.
-- Probado en **Paper 1.21.1** con Java 21.
+- Servidor **Bukkit, Spigot o Paper** de Minecraft **1.7 a 26.3**, incluida la última versión estable de Paper.
+- **Java 8 o superior**. El plugin está compilado con bytecode de **Java 8**, pero cada servidor exige su propia versión de Java: Paper 26.1 y posteriores requieren **Java 25**.
+- Probado en **Paper 1.21.1** con Java 21 y en **Paper 26.3 build 211** con Java 25.
 - No requiere conexión a base de datos ni plugins adicionales.
 
 > En versiones muy antiguas que no tienen el evento de comandos de consola, ByOp avisa en la consola de que no puede bloquear `/op` desde ahí. El bloqueo de comandos de jugadores sigue funcionando.
@@ -356,6 +355,7 @@ ByOp/
 - Eliminado el soporte de MySQL/MariaDB y el driver incluido.
 - Créditos a CamiKiss.
 - Jar más ligero, sin dependencias.
+- Compatibilidad comprobada en Paper 1.21.1 (Java 21) y Paper 26.3 (Java 25).
 
 ### 1.1.0
 - Soporte experimental de lista compartida con MySQL/MariaDB.
